@@ -5,3 +5,4 @@
 <a href="https://ibb.co/WkqxHGV"><img src="https://i.ibb.co/StWs65f/Screenshot-401.png" alt="Screenshot-401" border="0"></a>
 
 <h4>User Can Delete Update See Uploaded Post</h4>
+<a href="https://ibb.co/QFxhhFZ"><img src="https://i.ibb.co/pvkNNvg/Screenshot-402.png" alt="Screenshot-402" border="0"></a>

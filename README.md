@@ -8,3 +8,4 @@
 <a href="https://ibb.co/QFxhhFZ"><img src="https://i.ibb.co/pvkNNvg/Screenshot-402.png" alt="Screenshot-402" border="0"></a>
 
 <h4>User Can Delete Edit Commnets</h4>
+<img src="https://i.ibb.co/9qt28nH/Screenshot-404.png" alt="Screenshot-404" border="0">

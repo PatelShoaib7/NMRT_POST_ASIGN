@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+/* 
+import React, { useEffect, useState } from 'react'
+import { Box, Button, Image, Input, Spacer } from '@chakra-ui/react'
+import {useNavigate} from 'react-router-dom'
+export const Post = () => {
+  const [image , setImage]=useState({});
+  const [saveData , setSaveData]=useState([]);
+   const [uploadImag , setUploadImage]=useSatte({})
+  const navigate = useNavigate()
+
+  const handleChange =(e)=>{
+      let file =e.target.files[0];
+     let ImageURL= URL.createObjectURL(file)
+      setImage(e.target.files[0]);
+      setImage(ImageURL)
+      setSaveData([{img:ImageURL}])
+      console.log('seleted on file')
+  }
+   
+//     const hanldeSubmit =()=>{
+//       const data = new FormData();
+//       data.append("file",uploadImag)
+//       data.append("upload_preset","apxkkzs8")
+//       data.append("cloud_name","dmkidukss")
+//        fetch('https://api.cloudinary.com/v1_1/dmkidukss/image/upload',{
+//         method:'post',
+//         body:data
+//       }).then((res)=> res.json())
+//     .then((DATA)=>{
+//       //console.log(DATA)
+//       setSaveData([DATA])
+//     })
+//     .catch((err)=>{
+//       console.log(err)
+//     })
+//     }
+
+
+     
+  
+//     console.log(saveData,'DATA OBJ HAI')
+ 
+  const handleDelete =(elem)=>{
+       const updatdData = saveData.filter((el)=> el.img !== elem.img)
+       setSaveData(updatdData)
+       window.location.reload()
+  }
+  useEffect(()=>{
+  },[image])
+  console.log(saveData,'array aya ')
+  return (
+    <div>
+      <Input size="s" width='s' 
+             type="file" onChange={handleChange}
+             
+      />
+      <Button onClick={()=> navigate("/")}>See Posts</Button>
+     
+      { saveData.length?  saveData.map((elem)=>(
+        <Box>
+              <Image src={image || elem.img} w="300px" h="200px" m="auto"/>
+              <Button onClick={()=>handleDelete(elem) }>Delete </Button>< > </>
+              <Button>Upload</Button>
+        </Box>
+       
+      )): null
+      }
+    </div>
+  )
+} */ 

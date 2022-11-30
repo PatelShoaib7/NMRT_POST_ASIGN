@@ -1,12 +1,9 @@
-
 import axios from 'axios';
 import { HANDLE_UPLOAD_ACTION, ADD_COUNTER_INCREMENT,REDUCE_COUNTER_DECREMENT, ADD_COMMENGT_ON_POST, UPDATE_OR_EDIT_COMMENT, DELETE_COMMENT } from './action.types';
-
 export  const uplodaDATAfun =(task , dispatch)=>{
     // axios.post('http://localhost:8000/data',task)
     // .then((res)=>{
     //   console.log('data is saved')
-     
       dispatch({type:HANDLE_UPLOAD_ACTION , payload:task})
     // })
     // .catch((err)=>{

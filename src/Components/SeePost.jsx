@@ -24,52 +24,29 @@ export const SeePost = () => {
     const [comment ,setComnt]=useState({});
     const [updtaeComment ,setUpdtaeComment]=useState({})
     const { isOpen, onOpen, onClose } = useDisclosure()
-    
     const dispatch = useDispatch();
-
-    const navigate = useNavigate();
-    // const getData = async()=>{
-    //     let res = await fetch('http://localhost:8000/data')
-    //     let data =await res.json();
-    //     //console.log(data)
-    //     setPostData(data)
-    // }
-
-
-   //FUNCTION TO HANDLE COMMNETS
-
+    const navigate = useNavigate()
     const hanldeComent =(e)=>{
          setComnt(e.target.value)
     }
    const handleCommentData =()=>{
               setComnt('')
        let obj = {comment:comment,date:new Date(),id:commentData.length};
-       add_comment(obj, dispatch)
-       
+       add_comment(obj, dispatch) 
     }
  const handleUPDATEcmnt=(elem)=>{
-
           console.log(comment,'****comment old',updtaeComment,'*****updtaeComment')
           updteCommentFUN({oldCommnetVALUE:comment ,comment:updtaeComment}, dispatch)
-      
       }
   const handleDELETEcmnt =(elem)=>{
     //console.log(elem.target.value)
     let obj={comment:elem.target.value ,id:commentData.length}
     delet_comment_FUN(obj,dispatch)
-  
   }
- 
 
   const handleDELETE_IMAGE =(elem)=>{
-    
    console.log(elem.target.value )
-  
-  
   }
-
-
-    //LIKES COUNTER UPADTOR FUNCTION 
      const handleLIkes =(event)=>{
         event.currentTarget.disabled = true;
         incereCount_Fun(dispatch)

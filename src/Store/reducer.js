@@ -1,19 +1,10 @@
 import { HANDLE_UPLOAD_ACTION, REDUCE_COUNTER_DECREMENT,ADD_COUNTER_INCREMENT, ADD_COMMENGT_ON_POST, UPDATE_OR_EDIT_COMMENT, DELETE_COMMENT} from "./action.types"
-
-// const [LikeCount , setLikeCount]=useState(11);
-// const [DISLikeCount , setDISLikeCount]=useState(10)
-// const [comment ,setComnt]=useState({})
-// const [commentData, setCommentData]=useState([])
-
-
 export const initState ={
        saveData:[],
        LikeCount:11,
        DISLikeCount:10,
        commentData:[]
 }
-
-
 export const reducer =(state=initState,{type,payload})=>
 {
     console.log(payload,'payload ki value hai ')
@@ -51,9 +42,7 @@ export const reducer =(state=initState,{type,payload})=>
         case UPDATE_OR_EDIT_COMMENT :{
          console.log(payload,'of the update or edit')
             const updatedData = state.commentData.map((ele)=>{
-            }) 
-               
-          
+            })         
         }
         case DELETE_COMMENT :{
             console.log(payload,'delete payoad')

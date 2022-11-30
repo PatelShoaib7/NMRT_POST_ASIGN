@@ -15,8 +15,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { add_comment, decrementCount_FUN, delet_comment_FUN, incereCount_Fun, updteCommentFUN } from './../Store/action';
 import { Header } from './Header';
 
-
-
 export const SeePost = () => {
   const {saveData ,LikeCount,DISLikeCount ,commentData}= useSelector((state)=> state)
   console.log(saveData,'current state SEEpost')
@@ -43,7 +41,6 @@ export const SeePost = () => {
     let obj={comment:elem.target.value ,id:commentData.length}
     delet_comment_FUN(obj,dispatch)
   }
-
   const handleDELETE_IMAGE =(elem)=>{
    console.log(elem.target.value )
   }
@@ -51,7 +48,6 @@ export const SeePost = () => {
         event.currentTarget.disabled = true;
         incereCount_Fun(dispatch)
      }
-
     //DISLIKE COUNTER UODATOR FUNCTION
   const handleLIkeDiske =(event)=>{
     event.currentTarget.disabled = true;
@@ -129,10 +125,6 @@ export const SeePost = () => {
                    )) 
                 }
             </Box>
-
-
-
-
     <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
              <ModalContent>

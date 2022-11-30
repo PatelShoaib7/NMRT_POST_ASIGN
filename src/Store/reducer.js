@@ -14,7 +14,6 @@ export const reducer =(state=initState,{type,payload})=>
                 return {
                      ...state,
                      saveData:[...state.saveData,payload],
-                  
                 }
             }
         case ADD_COUNTER_INCREMENT :{
@@ -22,7 +21,6 @@ export const reducer =(state=initState,{type,payload})=>
                 ...state,
                 LikeCount:state.LikeCount+1,
                 DISLikeCount:state.DISLikeCount-1
-                
             }
         }
         case REDUCE_COUNTER_DECREMENT :{
@@ -38,7 +36,6 @@ export const reducer =(state=initState,{type,payload})=>
                     commentData:[payload, ...state.commentData]
             }
         }
-        //elem={comment:'',id:''}
         case UPDATE_OR_EDIT_COMMENT :{
          console.log(payload,'of the update or edit')
             const updatedData = state.commentData.map((ele)=>{

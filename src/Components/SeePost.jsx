@@ -133,15 +133,6 @@ export const SeePost = () => {
 
 
 
-
-
-
-
-
-
-
-
-
     <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
              <ModalContent>

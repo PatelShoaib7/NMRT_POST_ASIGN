@@ -13,7 +13,8 @@ export  const uplodaDATAfun =(task , dispatch)=>{
  export const incereCount_Fun =(dispatch)=>{
     dispatch({type:ADD_COUNTER_INCREMENT})
  }
- export const decrementCount_FUN =(dispatch)=>{
+ export const decrementCount_FUN =(dispatch)=>
+ {
      dispatch({type:REDUCE_COUNTER_DECREMENT})
  }
  export const add_comment =(obj ,dispatch)=>{

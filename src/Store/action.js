@@ -6,9 +6,9 @@ export  const uplodaDATAfun =(task , dispatch)=>{
     //   console.log('data is saved')
       dispatch({type:HANDLE_UPLOAD_ACTION , payload:task})
     // })
-    // .catch((err)=>{
-    //  console.log(err)
-    // })
+     .catch((err)=>{
+     console.log(err)
+     })
  }
  export const incereCount_Fun =(dispatch)=>{
     dispatch({type:ADD_COUNTER_INCREMENT})

@@ -17,7 +17,8 @@ export  const uplodaDATAfun =(task , dispatch)=>{
  {
      dispatch({type:REDUCE_COUNTER_DECREMENT})
  }
- export const add_comment =(obj ,dispatch)=>{
+ export const add_comment =(obj ,dispatch)=>
+ {
     dispatch({type:ADD_COMMENGT_ON_POST,payload:obj})
  }
  export const updteCommentFUN =(obj,dispatch)=>{

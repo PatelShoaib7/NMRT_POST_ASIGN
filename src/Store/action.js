@@ -24,7 +24,8 @@ export  const uplodaDATAfun =(task , dispatch)=>{
  export const updteCommentFUN =(obj,dispatch)=>{
     dispatch({type:UPDATE_OR_EDIT_COMMENT,plyload:obj})
  }
- export const delet_comment_FUN =(obj,dispatch)=>{
+ export const delet_comment_FUN =(obj,dispatch)=>
+ {
      //console.log(obj,'comig obj from SeePost')
     dispatch({type:DELETE_COMMENT,payload:obj})
  }

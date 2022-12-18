@@ -10,7 +10,6 @@ export const reducer =(state=initState,{type,payload})=>
     console.log(payload,'payload ki value hai ')
     switch(type){
         case HANDLE_UPLOAD_ACTION :{
-            
                 return {
                      ...state,
                      saveData:[...state.saveData,payload],

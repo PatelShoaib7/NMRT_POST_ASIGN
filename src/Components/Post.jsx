@@ -8,7 +8,6 @@ import axios from 'axios';
 import { uplodaDATAfun } from './../Store/action';
 
 
-//D\FUNCTION TO POST IMAGE
 export const Post = () => {
   const {saveData}= useSelector((state)=> state)
   console.log(saveData,'current state hai ye')

@@ -39,7 +39,8 @@ export const reducer =(state=initState,{type,payload})=>
          console.log(payload,'of the update or edit')
             const updatedData = state.commentData.map((ele)=>{
             })         
-        }
+            }
+                  
         case DELETE_COMMENT :{
             console.log(payload,'delete payoad')
             const upadatedData = state.commentData.filter((ele)=> (ele.comment != payload.comment))
